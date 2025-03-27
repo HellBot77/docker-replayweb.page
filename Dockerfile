@@ -17,8 +17,6 @@ RUN yarn && \
     export NODE_ENV=production && \
     yarn update-ruffle && \
     yarn build-docs
-RUN cd mkdocs && \
-    mkdocs build
 
 FROM lipanski/docker-static-website
 
